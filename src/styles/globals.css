@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --backgrount: #f2f3f5;
+  --gray-line: #dcdde6;
+  --text: #666666;
+  --text-highlight: #b3b9ff;
+  --title: #2e384d;
+  --red: #e83f5b;
+  --green: #4cd62b;
+  --blue: #5965e6;
+  --blue-dark: #4953bb;
+  --blue-twitter: #2AA9E;
+}
+
+@media (max-width: 1080) {
+  html {
+    font-size: 93.75%;
+  }
+}
+@media (max-width: 720) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background-attachment: var(--backgrount);
+  color: var(--text);
+}
+
+body,
+input,
+textarea {
+  font: 400 1rem "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+link {
+  text-decoration: none;
+  color: inherit;
+}
