@@ -27,13 +27,14 @@ export function CountDownProvider({children}:CountDownProviderProps) {
     const seconds = time%60;
 
     function startCountDown() {
-        setIsActive(true)
+        setIsActive(true);
     }
 
     function resetCountDown() {
-        clearTimeout(countDownTimeout)
-        setIsActive(false)
-        setTime(0.05*60)
+        clearTimeout(countDownTimeout);
+        setHasFinished(false);
+        setIsActive(false);
+        setTime(0.05*60);
     }
     useEffect(() => {
         if(isActive && time>0){
