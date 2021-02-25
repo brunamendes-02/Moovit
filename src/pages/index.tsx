@@ -1,11 +1,11 @@
 import Head from 'next/head'
 
-import { CompletedChalanges } from "../components/CompletedChalanges";
+import { CompletedChallenges } from "../components/CompletedChallenges";
 import { CountDown } from "../components/CountDown";
 import { ExperienceBar } from "../components/ExperienceBar";
 import { Profile } from "../components/Profile";
-import { ChalangeBox } from "../components/ChalangeBox";
-
+import { ChallengeBox } from "../components/ChallengeBox";
+import {CountDownProvider} from '../contexts/CountDownContext';
 import styles from '../styles/pages/Home.module.css';
 
 export default function Home() {
@@ -15,16 +15,18 @@ export default function Home() {
         <title>Início | Moveit</title>
       </Head>
       <ExperienceBar />
+      <CountDownProvider>
       <section>
         <div >
           <Profile />
-          <CompletedChalanges />
+          <CompletedChallenges />
           <CountDown />
         </div>
         <div>
-          <ChalangeBox />
+          <ChallengeBox />
         </div>
       </section>
+      </CountDownProvider>
     </div>
   )
 }

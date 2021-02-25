@@ -1,31 +1,32 @@
 import { useContext } from 'react';
-import { ChalangeContext } from '../contexts/ChalangeContext';
-import styles from '../styles/components/ChalangeBox.module.css';
+import { ChallengeContext } from '../contexts/ChallengeContext';
+import styles from '../styles/components/ChallengeBox.module.css';
 
-export function ChalangeBox() {
-    const {activeChalange, resetChalange} = useContext(ChalangeContext)
+export function ChallengeBox() {
+    const {activeChallenge, resetChallenge, completeChallenge} = useContext(ChallengeContext)
 
     return (
-        <div className={styles.chalangeBoxContainer}>
-            {activeChalange? (
-                <div className={styles.chalangeActive}>
-                    <header>Ganhe {activeChalange.amount} xp</header>
+        <div className={styles.challengeBoxContainer}>
+            {activeChallenge? (
+                <div className={styles.challengeActive}>
+                    <header>Ganhe {activeChallenge.amount} xp</header>
                     <main>
-                        <img src={`icons/${activeChalange.type}.svg`} alt=""/>
+                        <img src={`icons/${activeChallenge.type}.svg`} alt=""/>
                         <strong>Novo desafio</strong>
-                        <p>{activeChalange.description}</p>
+                        <p>{activeChallenge.description}</p>
                     </main>
                     <footer>
                         <button 
                         type="button"
-                        onClick={resetChalange}
-                        className={styles.chalangeFailedButton}
+                        onClick={resetChallenge}
+                        className={styles.challengeFailedButton}
                         >
                             Falhei
                         </button>
                         <button 
+                        onClick={completeChallenge}
                         type="button"
-                        className={styles.chalangeSucceededButton}
+                        className={styles.challengeSucceededButton}
                         >
                             Completei
                         </button>

@@ -1,4 +1,4 @@
-.chalangeBoxContainer {
+.challengeBoxContainer {
   height: 100%;
   background: var(--white);
   border-radius: 5px;
@@ -38,13 +38,13 @@
   margin-bottom: 1rem;
 }
 
-.chalangeActive {
+.challengeActive {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.chalangeActive header {
+.challengeActive header {
   color: var(--blue);
   font-weight: 600;
   font-size: 1.25rem;
@@ -52,7 +52,7 @@
   border-bottom: 1px solid var(--gray-line);
 }
 
-.chalangeActive main {
+.challengeActive main {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -60,24 +60,24 @@
   justify-content: center;
 }
 
-.chalangeActive main strong {
+.challengeActive main strong {
   font-weight: 600;
   font-size: 2rem;
   color: var(--title);
   margin: 1.5rem 0 1rem;
 }
 
-.chalangeActive main p {
+.challengeActive main p {
   line-height: 1.5;
 }
 
-.chalangeActive footer {
+.challengeActive footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
-.chalangeActive footer button {
+.challengeActive footer button {
   height: 3rem;
   display: flex;
   align-items: center;
@@ -93,14 +93,14 @@
   transition: 0.2s;
 }
 
-.chalangeActive footer button.chalangeFailedButton {
+.challengeActive footer button.challengeFailedButton {
   background: var(--red);
 }
 
-.chalangeActive footer button.chalangeSucceededButton {
+.challengeActive footer button.challengeSucceededButton {
   background: var(--green);
 }
 
-.chalangeActive footer button:hover {
+.challengeActive footer button:hover {
   filter: brightness(0.9);
 }
