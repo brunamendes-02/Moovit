@@ -4,7 +4,7 @@ Project made in Next Level Week using Next.js. The project aims to improve the h
 # Getting Started
 
 npm run dev
-# or
+or
 yarn dev
 
 Open http://localhost:3000 with your browser to see the result.
