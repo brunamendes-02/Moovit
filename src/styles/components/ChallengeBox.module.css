@@ -13,19 +13,19 @@
   text-align: center;
 }
 
-.challangeNotAchieve {
+.challengeNotAchieve {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.challangeNotAchieve strong {
+.challengeNotAchieve strong {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.4;
 }
 
-.challangeNotAchieve p {
+.challengeNotAchieve p {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +34,7 @@
   margin-top: 3rem;
 }
 
-.challangeNotAchieve p img {
+.challengeNotAchieve p img {
   margin-bottom: 1rem;
 }
 

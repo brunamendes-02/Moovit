@@ -6,7 +6,7 @@
 
 :root {
   --white: #fff;
-  --backgrount: #f2f3f5;
+  --background: #f2f3f5;
   --gray-line: #dcdde6;
   --text: #666666;
   --text-highlight: #b3b9ff;
@@ -30,7 +30,7 @@
 }
 
 body {
-  background-attachment: var(--backgrount);
+  background-attachment: var(--background);
   color: var(--text);
 }
 
