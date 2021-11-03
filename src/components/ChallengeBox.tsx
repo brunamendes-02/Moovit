@@ -1,11 +1,10 @@
-import { useContext } from "react";
-import { ChallengeContext } from "../contexts/ChallengeContext";
-import { CountDownContext } from "../contexts/CountDownContext";
-import styles from "../styles/components/ChallengeBox.module.css";
+import { useContext } from 'react';
+import { ChallengeContext } from '../contexts/ChallengeContext';
+import { CountDownContext } from '../contexts/CountDownContext';
+import styles from '../styles/components/ChallengeBox.module.css';
 
 export function ChallengeBox() {
-  const { activeChallenge, resetChallenge, completeChallenge } =
-    useContext(ChallengeContext);
+  const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengeContext);
   const { resetCountDown } = useContext(CountDownContext);
 
   function handleChallengeSucceeded() {

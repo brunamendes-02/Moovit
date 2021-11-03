@@ -1,5 +1,5 @@
-import { createContext, ReactNode, useContext, useEffect, useState } from "react";
-import { ChallengeContext } from "./ChallengeContext";
+import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
+import { ChallengeContext } from './ChallengeContext';
 
 interface CountDownContextData{
     minutes: number,
@@ -50,12 +50,12 @@ export function CountDownProvider({children}:CountDownProviderProps) {
 
     return(
         <CountDownContext.Provider value={{
-        minutes,
-        seconds,
-        hasFinished,
-        isActive,
-        startCountDown,
-        resetCountDown,
+            minutes,
+            seconds,
+            hasFinished,
+            isActive,
+            startCountDown,
+            resetCountDown,
         }}>
             {children}
         </CountDownContext.Provider>

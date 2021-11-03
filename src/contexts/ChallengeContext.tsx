@@ -83,9 +83,8 @@ export function ChallengesProvider({
     }
 
     function completeChallenge() {
-        if(!activeChallenge){
-            return;
-        }
+        if(!activeChallenge)  return;
+
         const { amount } = activeChallenge;
         let finalExperience = currentExperience + amount;
         if(finalExperience >= experienceToNextLevel){
